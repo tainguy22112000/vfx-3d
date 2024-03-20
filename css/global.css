@@ -9,12 +9,16 @@ body,
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --header-bg: #1b1b1b;
+  --bg-gray-1: #1b1b1b;
+  --text-gray-1: #c4c4c4;
+  --text-gray-2: #858585;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: 0;
 
   font-family: Inter, sans-serif;
   font-size: 16px;
