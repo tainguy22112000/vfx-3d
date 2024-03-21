@@ -28,11 +28,12 @@
 
 .banner {
   position: relative;
-  img {
-    background: center center no-repeat;
-    width: 100%;
-    box-shadow: 20px 20px 40px #000 inset;
-  }
+}
+
+.banner-background {
+  background: center center no-repeat;
+  width: 100%;
+  box-shadow: 20px 20px 40px #000 inset;
 }
 
 .overlay {
@@ -62,13 +63,13 @@
   padding: 0 20px;
   gap: 20px;
 
-  h1 {
+  > h1 {
     color: #fff;
     font-size: 40px;
     margin-bottom: 0;
   }
 
-  p {
+  > p {
     color: var(--text-gray-1);
     font-size: 14px;
     line-height: 2;
@@ -121,11 +122,11 @@
     max-width: 600px;
     gap: 40px;
 
-    h1 {
+    > h1 {
       font-size: 64px;
     }
 
-    p {
+    > p {
       font-size: 20px;
     }
   }
@@ -140,7 +141,7 @@
 
 .client-container {
   width: 100%;
-  h2 {
+  > h2 {
     font-size: 20px;
     margin-bottom: 0;
     font-weight: 700;
@@ -150,13 +151,13 @@
 .client-progress {
   gap: 10px;
 
-  h1 {
+  > h1 {
     font-size: 36px;
     line-height: 1.1;
     margin-bottom: 0;
   }
 
-  h6 {
+  > h6 {
     font-size: 20px;
     color: var(--text-gray-2);
     line-height: 1.1;
@@ -170,7 +171,7 @@
   }
 
   .client-container {
-    h2 {
+    > h2 {
       font-size: 24px;
     }
   }
@@ -178,7 +179,7 @@
   .client-progress {
     gap: 15px;
 
-    h6 {
+    > h6 {
       font-size: 24px;
     }
   }
@@ -190,7 +191,7 @@
   }
 
   .client-container {
-    h2 {
+    > h2 {
       font-size: 32px;
     }
   }
@@ -198,11 +199,11 @@
   .client-progress {
     gap: 26px;
 
-    h1 {
+    > h1 {
       font-size: 48px;
     }
 
-    h6 {
+    > h6 {
       font-size: 36px;
     }
   }
@@ -234,11 +235,11 @@
 .card-content {
   gap: 6px;
 
-  h6 {
+  > h6 {
     line-height: 1.25;
   }
 
-  span {
+  > span {
     font-size: 12px;
     color: var(--text-gray-2);
   }
@@ -273,7 +274,7 @@
   gap: 10px;
   padding: 0 20px;
 
-  h2 {
+  > h2 {
     font-size: 20px;
     margin-bottom: 0;
     line-height: 1.1;
@@ -281,7 +282,7 @@
     font-weight: 700;
   }
 
-  p {
+  > p {
     font-size: 14px;
     margin-bottom: 0;
     line-height: 1.1;
@@ -301,7 +302,7 @@
   box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px inset;
   position: relative;
 
-  img {
+  > img {
     width: 100%;
   }
 }
@@ -316,7 +317,7 @@
   height: 100%;
   color: #fff;
 
-  span {
+  > span {
     font-size: 20px;
     font-weight: 700;
   }
@@ -330,11 +331,11 @@
   }
   .expertises-title {
     gap: 15px;
-    h2 {
+    > h2 {
       font-size: 24px;
     }
 
-    p {
+    > p {
       font-size: 16px;
     }
   }
@@ -344,7 +345,7 @@
   }
 
   .expertises-overlay {
-    span {
+    > span {
       font-size: 32px;
     }
   }
@@ -359,11 +360,11 @@
   .expertises-title {
     gap: 20px;
 
-    h2 {
+    > h2 {
       font-size: 32px;
     }
 
-    p {
+    > p {
       font-size: 20px;
     }
   }
@@ -373,7 +374,7 @@
   }
 
   .expertises-overlay {
-    span {
+    > span {
       font-size: 64px;
     }
   }
