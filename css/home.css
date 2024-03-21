@@ -64,13 +64,13 @@
   gap: 20px;
 
   > h1 {
-    color: #fff;
+    color: #fff !important;
     font-size: 40px;
     margin-bottom: 0;
   }
 
   > p {
-    color: var(--text-gray-1);
+    color: var(--text-gray-1) !important;
     font-size: 14px;
     line-height: 2;
     margin-bottom: 0;
@@ -136,7 +136,7 @@
 .client {
   padding: 40px 0;
   background-color: var(--bg-gray-1);
-  color: #fff;
+  color: #fff !important;
 }
 
 .client-container {
@@ -278,7 +278,7 @@
     font-size: 20px;
     margin-bottom: 0;
     line-height: 1.1;
-    color: #fff;
+    color: #fff !important;
     font-weight: 700;
   }
 
@@ -293,6 +293,7 @@
 .expertises-grid {
   display: grid;
   width: 100%;
+  max-width: 100%;
   grid-template-columns: 1fr 1fr;
   gap: 6px;
 }
@@ -315,7 +316,7 @@
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
-  color: #fff;
+  color: #fff !important;
 
   > span {
     font-size: 20px;
