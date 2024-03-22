@@ -11,8 +11,20 @@
   background-color: transparent;
 }
 
+/* ------------------------ BANNER ---------------------- */
+
+.banner {
+  position: relative;
+}
+
+.banner-background {
+  background: center center no-repeat;
+  width: 100%;
+  box-shadow: 20px 20px 40px #000 inset;
+}
+
 .header {
-  position: fixed;
+  position: absolute;
   z-index: 3;
   top: 0;
   left: 0;
@@ -20,13 +32,22 @@
   background-color: transparent;
   padding: 15px 25px;
   height: 72px;
-  backdrop-filter: blur(42px);
-  -webkit-backdrop-filter: blur(42px);
+  /* backdrop-filter: blur(42px);
+  -webkit-backdrop-filter: blur(42px); */
 }
 
 .header-logo {
   width: 100px;
   height: 42px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, transparent, #000 100%, #000 100%);
+  height: 50%;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -40,28 +61,6 @@
     padding: 40px 80px;
   }
 }
-
-/* ------------------------ BANNER ---------------------- */
-
-.banner {
-  position: relative;
-}
-
-.banner-background {
-  background: center center no-repeat;
-  width: 100%;
-  box-shadow: 20px 20px 40px #000 inset;
-}
-
-.overlay {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  right: 0;
-  background: linear-gradient(to bottom, transparent, #000 100%, #000 100%);
-  height: 50%;
-}
-
 /* ------------------------ INTRODUCTION ----------------- */
 .intro {
   background-color: #000;
@@ -72,7 +71,7 @@
   max-width: 764px;
   width: 100%;
   gap: 30px;
-  padding: 40px 20px;
+  padding: 40px 20px 30px;
 }
 
 .intro-content {
@@ -248,6 +247,10 @@
   gap: 20px;
 }
 
+.card-block {
+  max-width: 112px;
+}
+
 .card-content {
   gap: 6px;
 
@@ -265,6 +268,10 @@
   .card-container {
     gap: 20px;
     padding: 30px 40px;
+  }
+
+  .card-block {
+    max-width: 136px;
   }
 
   .card-item {
@@ -302,7 +309,7 @@
     font-size: 14px;
     margin-bottom: 0;
     line-height: 1.7;
-    color: var(--text-gray-2);
+    color: var(--text-gray-2) !important;
   }
 }
 
@@ -321,6 +328,7 @@
 
   > img {
     width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -401,7 +409,7 @@
 .contact {
   background: url("../assets/contact-bg-sm.png") center no-repeat;
   background-size: cover;
-  padding: 40px;
+  padding: 40px 20px;
   box-shadow: inset 50px 50px 200px 10px #000;
 }
 
@@ -417,6 +425,7 @@
   line-height: 1.5;
   color: #fff;
   text-align: center;
+  padding: 0 20px;
 }
 
 .contact-email {
@@ -544,6 +553,8 @@
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+  width: 100%;
+  max-width: 100%;
 }
 
 .gallery-item {
@@ -647,7 +658,7 @@
   gap: 5px;
 
   > li {
-    list-style: disc;
+    list-style: disc !important;
     font-size: 13px;
     margin-left: 20px;
     line-height: 2;
@@ -658,7 +669,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5px;
-  max-width: 50%;
 
   > li {
     font-size: 13px;
