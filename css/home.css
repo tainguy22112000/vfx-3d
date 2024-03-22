@@ -315,10 +315,9 @@
 
 .expertises-grid {
   display: grid;
-  width: 100%;
   max-width: 100%;
   grid-template-columns: repeat(2, 1fr);
-  gap: 6px;
+  grid-gap: 6px;
 }
 
 .expertises-item {
@@ -554,7 +553,6 @@
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  width: 100%;
   max-width: 100%;
 }
 
