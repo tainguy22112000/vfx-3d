@@ -19,11 +19,14 @@
   height: 42px;
 }
 
+.header-empty {
+  display: none;
+}
+
 .header-title {
   color: #fff !important;
   font-weight: 700;
   font-size: 12px;
-  margin-left: -100px;
 }
 
 .intro-container {
@@ -90,6 +93,10 @@
   .header-logo {
     width: 146px;
     height: 60px;
+  }
+
+  .header-empty {
+    display: block;
   }
 
   .header-title {
