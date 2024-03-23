@@ -433,7 +433,7 @@
 .contact-email {
   font-size: 14px;
   font-family: Roboto, sans-serif;
-  line-height: 1.1;
+  line-height: 1.4;
   color: var(--text-gray-3);
   gap: 10px;
   margin-top: 20px;
@@ -492,7 +492,6 @@
   .contact-email {
     margin-top: 10px;
     margin-bottom: 40px;
-    max-width: 567px;
   }
 }
 
@@ -514,6 +513,7 @@
   .contact-email {
     text-align: start;
     justify-content: flex-start !important;
+    max-width: 567px;
   }
 
   .contact-container {
